@@ -1,0 +1,4 @@
+select worldindicators.yearcountryindicators.*, worldindicators.countrycontinent.continent, worldindicators.countrycontinent.sub_region
+from worldindicators.yearcountryindicators
+join worldindicators.countrycontinent
+on yearcountryindicators.`Country Code` = countrycontinent.code_3
